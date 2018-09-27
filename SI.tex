@@ -1,0 +1,47 @@
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+
+
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{placeins}
+\usepackage[colorinlistoftodos]{todonotes}
+%\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage{totcount}
+\usepackage{makecell}
+\usepackage{lastpage}
+\title{Prospects and Challenges for Solar Fertilizers Supporting Information}
+\begin{document}
+\renewcommand{\thepage}{S\arabic{page}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\newpage
+\regtotcounter{page}
+\regtotcounter{table}
+\regtotcounter{figure}
+%\begin{suppinfo}
+%\total{page}\ pages, \total{table}\ tables, \total{figure}\ figures
+\listoftables
+\listoffigures
+\newpage
+
+\section{Calculations}
+\begin{equation}
+\mathrm{
+50ppm \: NH_3 \times \frac{10^{-3}}{ppm} \times 101.325kPa \times 0.59 \frac{mol}{m^3Pa} \times \frac{m^3M}{1000mol} \times \frac{10^{-3} mM}{M} = 2.98mM \: NH_3 \approx 3mM \: NH_3
+}
+\end{equation}
+
+
+%\newpage
+
+\pagebreak
+\bibliography{main.bib}
+%\end{suppinfo}
+\end{document}

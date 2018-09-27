@@ -19,7 +19,8 @@
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
 \documentclass[preprint,12pt]{elsarticle}
-
+\usepackage{todonotes}
+\usepackage{wrapfig}
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
 
@@ -64,6 +65,10 @@
 %% \biboptions{comma,round}
 
 % \biboptions{}
+\usepackage{soul}
+
+\newcommand{\needcite}[1][]{\textcolor{red}{Citation needed.}}
+
 
 \journal{Joule}
 
@@ -100,11 +105,11 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\author{Andrew J. Medford}
+\author{Andrew J. Medford, Benjamin M. Comer, Pratham Arora, Matthew Realff}
 
 \address{School of Chemical \& Biomolecular Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
 
-\author{Marta C. Hatzell}
+\author{Marta C. Hatzell, Yu-Hsuan Liu}
 \address{School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
 
 \author{Porfirio Fuentes}
@@ -114,12 +119,11 @@
 
 
 \begin{abstract}
-%% Text of abstract
-Suspendisse potenti. Suspendisse quis sem elit, et mattis nisl. Phasellus consequat erat eu velit rhoncus non pharetra neque auctor. Phasellus eu lacus quam. Ut ipsum dolor, euismod aliquam congue sed, lobortis et orci. Mauris eget velit id arcu ultricies auctor in eget dolor. Pellentesque suscipit adipiscing sem, imperdiet laoreet dolor elementum ut. Mauris condimentum est sed velit lacinia placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam diam metus, pharetra vitae euismod sed, placerat ultrices eros. Aliquam tincidunt dapibus venenatis. In interdum tellus nec justo accumsan aliquam. Nulla sit amet massa augue.
+\hl{Authors currently ordered by institution; order will change after the paper is finalized.}
 \end{abstract}
 
 \begin{keyword}
-Science \sep Publication \sep Complicated
+Ammonia \sep Nitrogen \sep Sustainability \sep Agronomics \sep Electrochemistry \sep Photocatalysis
 %% keywords here, in the form: keyword \sep keyword
 
 %% MSC codes here, in the form: \MSC code \sep code
