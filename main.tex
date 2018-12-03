@@ -18,8 +18,8 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-%%\documentclass[final,1p,times,twocolumn]{elsarticle}
-\documentclass[preprint,review,12pt]{elsarticle}
+\documentclass[final,1p,times,twocolumn]{elsarticle}
+%%\documentclass[preprint,review,12pt]{elsarticle}
 \usepackage[a4paper, total={6in, 8in}]{geometry}
 \usepackage{todonotes}
 \usepackage{wrapfig}
@@ -37,6 +37,7 @@
 
 %% The graphicx package provides the includegraphics command.
 \usepackage{graphicx}
+\usepackage{comment}
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
 %% The amsthm package provides extended theorem environments
@@ -107,21 +108,32 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\author{Andrew J. Medford, Benjamin M. Comer, Pratham Arora, Matthew Realff}
+\author[GTChBE]{Benjamin M. Comer}
+\author[GTME]{Marta C. Hatzell}
+\author[IFDC]{Porfirio Fuentes}
+\author[IFDC]{Christian O. Dimkpa}
+\author[IFDC]{Upendra P. Singh}
+\author[GTEE]{Yu-Hsuan Liu}
+\author[GTME]{Carlos Fernandez}
+\author[GTChBE]{Pratham Arora}
+\author[GTChBE]{Matthew Realff}
+\author[GTChBE]{Andrew J. Medford}
 
-\address{School of Chemical \& Biomolecular Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
+\address[GTChBE]{School of Chemical \& Biomolecular Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
 
-\author{Marta C. Hatzell, Yu-Hsuan Liu}
-\address{School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
+\address[GTME]{School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
 
-\author{Porfirio Fuentes}
-\author{Christian O. Dimkpa}
-\author{Upendra P. Singh}
-\address{International Fertilizer Development Center, Muscle Shoals, AL 35661}
+\address[GTEE]{School of Environmental Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
+
+
+\address[IFDC]{International Fertilizer Development Center, Muscle Shoals, AL 35661}
 
 
 \begin{abstract}
-\hl{Authors currently ordered by institution; order will change after the paper is finalized.}
+\hl{Author order is preliminary. Please let AJM know if you have comments.}
+
+The utilization of solar energy to directly convert molecular dinitrogen from the air into fixed nitrogen products that act as nutrients for plants presents an opportunity to develop ``solar fertilizers''. The proposed technology has much in common with solar fuels and chemicals, but also has some unique advantages and challenges. Solar fertilizer technology can reduce the energy and carbon footprint currently associated with the Haber-Bosch process for ammonia synthesis, and simultaneously reduce groundwater pollution by enabling improved nutrient management. The possibility of producing nitrogen fertilizers on-site at farms or in local regions can effectively compete with existing technology by reducing or removing transportation costs. Deploying solar fertilizer technology in developing regions can also improve access to fertilizers for farmers in remote regions and reduce the growing global crisis of world hunger. However, there are also substantial challenges that must be overcome in identifying active catalytic materials and effectively integrating solar fertilizer processes with distributed agricultural infrastructure. This work outlines the agronomic considerations that drive the development of decentralized solar fertilizer production, considers the technical considerations and strategies needed to develop a photo(electro)chemical fertilizer production process, and identifies some target metrics and testing considerations to promote efficient development of new materials and processes.
+
 \end{abstract}
 
 \begin{keyword}
