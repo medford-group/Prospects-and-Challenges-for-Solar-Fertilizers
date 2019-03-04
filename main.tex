@@ -20,12 +20,12 @@
 %%
 \documentclass[final,1p,times,twocolumn]{elsarticle}
 %%\documentclass[preprint,review,12pt]{elsarticle}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
-\usepackage{todonotes}
-\usepackage{wrapfig}
+%\usepackage[a4paper, total={6in, 8in}]{geometry}
+%\usepackage{todonotes}
+%\usepackage{wrapfig}
+%\usepackage{soul}
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
-
 %% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
 %% for a journal layout:
 %% \documentclass[final,1p,times]{elsarticle}
@@ -34,12 +34,17 @@
 %% \documentclass[final,3p,times,twocolumn]{elsarticle}
 %% \documentclass[final,5p,times]{elsarticle}
 %% \documentclass[final,5p,times,twocolumn]{elsarticle}
-
 %% The graphicx package provides the includegraphics command.
 \usepackage{graphicx}
 \usepackage{comment}
+\usepackage{hyperref}
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
+\usepackage[symbol]{footmisc}
+
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
 
@@ -47,6 +52,7 @@
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers after \end{frontmatter}.
 \usepackage{lineno}
+
 
 %% natbib.sty is loaded by default. However, natbib options can be
 %% provided with \biboptions{...} command. Following options are
@@ -68,9 +74,7 @@
 %% \biboptions{comma,round}
 
 % \biboptions{}
-\usepackage{soul}
 
-\newcommand{\needcite}[1][]{\textcolor{red}{Citation needed.}}
 
 
 \journal{Joule}
@@ -109,14 +113,14 @@
 %% \address[label2]{<address>}
 
 \author[GTChBE]{Benjamin M. Comer}
-\author[GTME]{Marta C. Hatzell}
 \author[IFDC]{Porfirio Fuentes}
 \author[IFDC]{Christian O. Dimkpa}
-\author[IFDC]{Upendra P. Singh}
 \author[GTEE]{Yu-Hsuan Liu}
 \author[GTME]{Carlos Fernandez}
 \author[GTChBE]{Pratham Arora}
 \author[GTChBE]{Matthew Realff}
+\author[IFDC]{Upendra P. Singh}
+\author[GTME]{Marta C. Hatzell}
 \author[GTChBE]{Andrew J. Medford}
 
 \address[GTChBE]{School of Chemical \& Biomolecular Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
@@ -125,14 +129,14 @@
 
 \address[GTEE]{School of Environmental Engineering, Georgia Institute of Technology, Atlanta, GA 30318}
 
-
 \address[IFDC]{International Fertilizer Development Center, Muscle Shoals, AL 35661}
 
 
 \begin{abstract}
-\hl{Author order is preliminary. Please let AJM know if you have comments.}
 
-The utilization of solar energy to directly convert molecular dinitrogen from the air into fixed nitrogen products that act as nutrients for plants presents an opportunity to develop ``solar fertilizers''. The proposed technology has much in common with solar fuels and chemicals, but also has some unique advantages and challenges. Solar fertilizer technology can reduce the energy and carbon footprint currently associated with the Haber-Bosch process for ammonia synthesis, and simultaneously reduce groundwater pollution by enabling improved nutrient management. The possibility of producing nitrogen fertilizers on-site at farms or in local regions can effectively compete with existing technology by reducing or removing transportation costs. Deploying solar fertilizer technology in developing regions can also improve access to fertilizers for farmers in remote regions and reduce the growing global crisis of world hunger. However, there are also substantial challenges that must be overcome in identifying active catalytic materials and effectively integrating solar fertilizer processes with distributed agricultural infrastructure. This work outlines the agronomic considerations that drive the development of decentralized solar fertilizer production, considers the technical considerations and strategies needed to develop a photo(electro)chemical fertilizer production process, and identifies some target metrics and testing considerations to promote efficient development of new materials and processes.
+Using solar energy to convert triple bonded molecular di-nitrogen from the air into fixed nitrogen products that act as nutrients for plants presents an opportunity to develop ``solar fertilizers''. The approach has much in common with solar fuels and chemicals, but also has some unique advantages and challenges. The possibility of producing nitrogen fertilizers at a country’s regional level may be able to effectively compete with existing technology by reducing the per unit cost of N nutrient production, removing or reducing transportation costs within or across international borders, and integrating with existing infrastructure. Furthermore, solar fertilizer technologies can reduce the energy and carbon footprint currently associated with the Haber-Bosch process for ammonia synthesis. Deploying solar fertilizer technology in developing countries can also improve access to fertilizers for farmers in remote regions and help achieve the United Nations Sustainable Development Goal 2 of ending hunger and ensuring access to safe, nutritious and sufficient food by all people, in particular the poor. %This goal calls for crucial investments to increase agricultural productivity and for sustainable food production systems to help alleviate the perils of hunger. 
+%and the goals from developing countries governments’ of increasing food security for their population.
+However, there are also substantial challenges that must be overcome in identifying active catalytic materials and effectively integrating solar fertilizer processes with agricultural infrastructure. This paper outlines the agronomic considerations that drive the development of decentralized solar fertilizer production, and explores their implications on fertilizer prices with an emphasis on the developing world. The work also provides an overview of the technical strategies that may enable photo(electro)chemical fertilizer production processes, including the use of fertigation or production of enhanced biochar, and identifies some target metrics and testing considerations to promote efficient development of new fertilizer materials and processes.
 
 \end{abstract}
 
